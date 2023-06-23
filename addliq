@@ -1,0 +1,1 @@
+python3 tibet.py deposit-liquidity --token-amount $1 --push-tx --asset-id $2

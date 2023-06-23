@@ -1,0 +1,11 @@
+	addliq
+	buywith
+	getpair
+	initliq
+	makepair
+	remliq
+	sell
+	sync
+	trybuy
+	trysell
+

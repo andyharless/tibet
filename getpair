@@ -1,0 +1,1 @@
+python3 tibet.py get-pair-info --asset-id $1

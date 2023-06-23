@@ -1,0 +1,1 @@
+python3 tibet.py remove-liquidity --liquidity-token-amount $1 --asset-id $2 --push-tx
