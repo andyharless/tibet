@@ -1656,7 +1656,7 @@ async def respond_to_swap_offer(
         total_distributed = 0
         donation_conds = []
         for i, donation_address in enumerate(donation_addresses[1:]):
-            donation_amount = extra_xch_amount * donation_weights[i + 1] // total_weights
+            donation_amount = total_donation_amount * donation_weights[i + 1] // total_weights
             
             if donation_address != "FEE":
                 donation_conds.append([
@@ -1748,7 +1748,7 @@ async def respond_to_swap_offer(
     )
 
 async def get_fee_estimate(mempool_sb, full_node_client):
-    cost_of_operation = 420000000 # upper bound (exaggerated so the tx doesn't fail)
+    cost_of_operation = 700000000 # upper bound (exaggerated so the tx doesn't fail)
     # from benchmarks:
     #   - add/remove liquidity -> ~250,000,000
     #   - add/remove liquidity -> ~250,000,000
